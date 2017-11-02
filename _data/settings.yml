@@ -1,0 +1,26 @@
+title:  "PARAG BHATNAGAR"
+tagline: "Personal Website"
+description:
+
+# Authors documented under _data
+
+# Change to true for Disqus comments
+disqus:
+  comments: false
+  disqus_shortname: 'parag-bhatnagar'
+
+menu:
+- {name: 'Work', folder: 'pages', file: 'portfolio.html'}
+- {name: 'Blog', folder: 'pages', file: 'resources.html'}
+- {name: 'Posts', folder: 'pages', file: 'sample-posts.html'}
+- {name: 'Doc', folder: 'pages', file: 'documentation.html'}
+- {name: 'About', folder: 'pages', file: 'about.html'}
+- {name: 'Contact', folder: 'pages', file: 'contact.html'}
+
+social:
+- {icon: 'facebook', link: 'https://www.facebook.com/paragbhtngr'}
+- {icon: 'instagram', link: 'https://instagram.com/paragbhtngr'}
+- {icon: 'envelope', link: 'mailto:paragbhtngr@gmail.com'}
+- {icon: 'rss-square', link: 'feed.xml'}
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer

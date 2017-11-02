@@ -1,0 +1,51 @@
+<li>
+    <a id="nullify" href="#nullifyModal">
+        <img
+            style="
+            width: 80%; 
+            padding: 10%; 
+            background: #eef2f3;  /* fallback for old browsers */
+            background-size:cover;
+            background-position-x: center;
+            " 
+            src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/nullify.png"
+        >
+    </a>
+</li>
+
+<!--DEMO01-->
+<div id="nullifyModal">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-nullifyModal closeModal"> 
+        <span id="close-1"></span>
+        <span id="close-2"></span>
+    </div>
+    
+    <div class="modal-content">
+        <!--Your modal content goes here-->
+        <div style="
+        width: 50%; 
+        height: 100vh; 
+        background: #8e9eab;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */         
+        background-size:cover;
+        background-position-x: center;
+        display: flex;
+    ">
+        <img style="
+            width: 80%;
+            margin: auto;
+        " src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/nullify.png">
+    </div>
+    </div>
+</div>
+
+<script>
+    $("#nullify").animatedModal({
+        modalTarget:'nullifyModal',
+        animatedIn:'bounceInUp',
+        animatedOut:'bounceOutDown',
+        color: '#FFFFFF'
+    });
+</script>

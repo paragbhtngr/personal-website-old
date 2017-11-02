@@ -1,0 +1,44 @@
+<li>
+    <a id="yncpanelwar" href="#yncpanelwarModal">
+        <img
+            style="
+            width: 100%; 
+            " 
+            src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/yncpanelwar.jpg"
+        >
+    </a>
+</li>
+
+<!--DEMO01-->
+<div id="yncpanelwarModal">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-yncpanelwarModal closeModal"> 
+        <span id="close-1"></span>
+        <span id="close-2"></span>
+    </div>
+    
+    <div class="modal-content">
+        <!--Your modal content goes here-->
+        <div style="
+        width: 50%; 
+        height: 100vh; 
+        background: #000;
+        display: flex;
+    ">
+        <img style="
+            max-height: 100%;
+            max-width: 100%;
+            margin: auto;
+        " src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/yncpanelwar.jpg">
+    </div>
+    </div>
+</div>
+
+<script>
+    $("#yncpanelwar").animatedModal({
+        modalTarget:'yncpanelwarModal',
+        animatedIn:'bounceInUp',
+        animatedOut:'bounceOutDown',
+        color: '#FFFFFF'
+    });
+</script>

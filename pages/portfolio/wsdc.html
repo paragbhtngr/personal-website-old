@@ -1,0 +1,49 @@
+<li>
+    <a id="wsdc" href="#wsdcModal">
+        <img
+            style="
+            width: 80%; 
+            padding: 10%; 
+            background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/wsdc-bg.jpg); 
+            background-size:cover;
+            background-position-x: center;
+            " 
+            src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/wsdc.png"
+        >
+    </a>
+</li>
+
+<!--DEMO01-->
+<div id="wsdcModal">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-wsdcModal closeModal"> 
+        <span id="close-1"></span>
+        <span id="close-2"></span>
+    </div>
+    
+    <div class="modal-content">
+        <!--Your modal content goes here-->
+        <div style="
+        width: 50%; 
+        height: 100vh; 
+        background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/wsdc-bg.jpg); 
+        background-size:cover;
+        background-position-x: center;
+        display: flex;
+    ">
+        <img style="
+            width: 80%;
+            margin: auto;
+        " src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/wsdc.png">
+    </div>
+    </div>
+</div>
+
+<script>
+    $("#wsdc").animatedModal({
+        modalTarget:'wsdcModal',
+        animatedIn:'bounceInUp',
+        animatedOut:'bounceOutDown',
+        color: '#FFFFFF'
+    });
+</script>

@@ -1,0 +1,44 @@
+<head>
+
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.data.settings.title }} | {{ site.data.settings.tagline }}
+    {% else %}
+      {{ page.title }} | {{ site.data.settings.title }}
+    {% endif %}
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- RSS-v2.0
+  <link href="{{ site.github.url }}/feed.xml" type="application/rss+xml" rel="alternate" title="{{ site.data.settings.title }} | {{ site.data.settings.tagline }}"/>
+  //-->
+
+  
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro|Archivo+Black">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css">
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/syntax.css">
+
+  <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js">
+  </script>
+
+  <script src="{{ site.url }}{{ site.baseurl }}/assets/js/modernizr.custom.js"></script>
+  <script src="{{ site.url }}{{ site.baseurl }}/assets/js/masonry.pkgd.min.js"></script>
+  <script src="{{ site.url }}{{ site.baseurl }}/assets/js/imagesloaded.js"></script>
+  <script src="{{ site.url }}{{ site.baseurl }}/assets/js/classie.js"></script>
+  <script src="{{ site.url }}{{ site.baseurl }}/assets/js/AnimOnScroll.js"></script>
+  <script src="{{ site.url }}{{ site.baseurl }}/assets/js/animatedModal.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  {% include google-analytics.html %}
+  <!-- Use Atom --> 
+  {% feed_meta %} 
+
+</head>

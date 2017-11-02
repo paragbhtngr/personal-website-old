@@ -1,0 +1,44 @@
+<li>
+    <a id="yncpanelscience" href="#yncpanelscienceModal">
+        <img
+            style="
+            width: 100%; 
+            " 
+            src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/yncpanelscience.jpg"
+        >
+    </a>
+</li>
+
+<!--DEMO01-->
+<div id="yncpanelscienceModal">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-yncpanelscienceModal closeModal"> 
+        <span id="close-1"></span>
+        <span id="close-2"></span>
+    </div>
+    
+    <div class="modal-content">
+        <!--Your modal content goes here-->
+        <div style="
+        width: 50%; 
+        height: 100vh; 
+        background: #000;
+        display: flex;
+    ">
+        <img style="
+            max-height: 100%;
+            max-width: 100%;
+            margin: auto;
+        " src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/yncpanelscience.jpg">
+    </div>
+    </div>
+</div>
+
+<script>
+    $("#yncpanelscience").animatedModal({
+        modalTarget:'yncpanelscienceModal',
+        animatedIn:'bounceInUp',
+        animatedOut:'bounceOutDown',
+        color: '#FFFFFF'
+    });
+</script>
