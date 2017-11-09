@@ -1,28 +1,41 @@
 .featured-posts {
   height: 400px;
   margin: 5px 10px 15px;
-  padding: 10px;
-  border-radius: 25px;
+  border-radius: 0px;
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-box-shadow: 0px 4px 28px -3px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 4px 28px -3px rgba(0,0,0,0.3);
-  box-shadow: 0px 4px 28px -3px rgba(0,0,0,0.3);
-  h2 {
+  .title {
     margin-top: 280px;
+    margin-left: 0px;
     padding: 20px;
+    background: rgba(0,0,0,1);
+    padding: 10px 50px 10px 50px;
+    position: relative;
+    // border-radius: 0 200px 200px 0px;
+    display: inline-block;
+    
     & span {
-      border-radius: 0 200px 200px 0px;
       display: inline;
       color: white;
-      font: bold 45px/45px Helvetica, Sans-Serif;
+      font: 2rem 'Montserrat', Sans-Serif;
       text-decoration: none;
-      background: rgba(0,0,0,1);
-      margin: 0px 0px 0px -30px;
-      padding: 10px 50px 10px 50px;
-      position: relative;
       z-index: 20;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .featured-posts {
+    height: 300px;
+    .title {
+      margin-top: 220px;
+      position: absolute;
+      bottom: 0;
+      & span {
+        font-size: 1.2rem;
+      }
     }
   }
 }

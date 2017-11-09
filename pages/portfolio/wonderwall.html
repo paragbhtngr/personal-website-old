@@ -1,49 +1,43 @@
 <li>
-    <a id="wonderwall" href="#wonderwallModal">
-        <img
-            style="
-            width: 80%; 
-            padding: 10%; 
-            background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/wonderwall-bg.jpg); 
-            background-size:cover;
-            background-position-x: center;
-            " 
-            src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/wonderwall.png"
-        >
-    </a>
-</li>
-
-<!--DEMO01-->
-<div id="wonderwallModal">
-    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-    <div class="close-wonderwallModal closeModal"> 
-        <span id="close-1"></span>
-        <span id="close-2"></span>
+        <a class="design" id="wonderwall" href="#wonderwallModal">
+            <img
+                style="
+                background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/wonderwall-bg.jpg); 
+                " 
+                src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/wonderwall.png"
+            >
+        </a>
+    </li>
+    
+    <!--DEMO01-->
+    <div id="wonderwallModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-wonderwallModal closeModal closeModal-white"> 
+            <span id="close-1"></span>
+            <span id="close-2"></span>
+        </div>
+        
+        <div class="modal-content">
+            <!--Your modal content goes here-->
+            <div class="modal-content-inner full-design" style="
+                background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/wonderwall-bg.jpg); 
+            ">
+                <img src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/wonderwall.png">
+            </div>
+            <div class="info">
+                <div class="frosty-text">
+                    <h2>wonderwall</h2>
+                    <p>What can I say about wonderwall?</p>
+                </div>
+            </div>
+        </div>
     </div>
     
-    <div class="modal-content">
-        <!--Your modal content goes here-->
-        <div style="
-        width: 50%; 
-        height: 100vh; 
-        background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/wonderwall-bg.jpg); 
-        background-size:cover;
-        background-position-x: center;
-        display: flex;
-    ">
-        <img style="
-            width: 80%;
-            margin: auto;
-        " src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/wonderwall.png">
-    </div>
-    </div>
-</div>
-
-<script>
-    $("#wonderwall").animatedModal({
-        modalTarget:'wonderwallModal',
-        animatedIn:'bounceInUp',
-        animatedOut:'bounceOutDown',
-        color: '#FFFFFF'
-    });
-</script>
+    <script>
+        $("#wonderwall").animatedModal({
+            modalTarget:'wonderwallModal',
+            animatedIn:'bounceInUp',
+            animatedOut:'bounceOutDown',
+            color: '#FFFFFF'
+        });
+    </script>

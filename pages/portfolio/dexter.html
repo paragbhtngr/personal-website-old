@@ -1,36 +1,30 @@
 <li>
-    <a id="dexter" href="#dexterModal">
-        <img
-            style="
-            width: 100%; 
-            " 
-            src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/dexter.jpg"
-        >
+    <a class="art" id="dexter" href="#dexterModal">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/dexter.jpg">
     </a>
 </li>
-
+    
 <!--DEMO01-->
 <div id="dexterModal">
     <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-    <div class="close-dexterModal closeModal"> 
+    <div class="close-dexterModal closeModal closeModal-white"> 
         <span id="close-1"></span>
         <span id="close-2"></span>
     </div>
     
     <div class="modal-content">
         <!--Your modal content goes here-->
-        <div style="
-        width: 50%; 
-        height: 100vh; 
-        background: #000;
-        display: flex;
-    ">
-        <img style="
-            max-height: 100%;
-            max-width: 100%;
-            margin: auto;
-        " src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/dexter.jpg">
-    </div>
+        <div class="modal-content-inner full-art" style="
+            background: black; 
+        ">
+            <img src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/dexter.jpg">
+        </div>
+        <div class="info">            
+            <div class="frosty-text">
+                <h2>dexter</h2>
+                <p>What can I say about dexter?</p>
+            </div>
+        </div>
     </div>
 </div>
 

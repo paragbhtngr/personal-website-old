@@ -1,44 +1,38 @@
 <li>
-    <a id="spacey" href="#spaceyModal">
-        <img
-            style="
-            width: 100%; 
-            " 
-            src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/spacey.jpg"
-        >
-    </a>
-</li>
-
-<!--DEMO01-->
-<div id="spaceyModal">
-    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-    <div class="close-spaceyModal closeModal"> 
-        <span id="close-1"></span>
-        <span id="close-2"></span>
+        <a class="art" id="spacey" href="#spaceyModal">
+            <img src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/spacey.jpg">
+        </a>
+    </li>
+        
+    <!--DEMO01-->
+    <div id="spaceyModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-spaceyModal closeModal closeModal-white"> 
+            <span id="close-1"></span>
+            <span id="close-2"></span>
+        </div>
+        
+        <div class="modal-content">
+            <!--Your modal content goes here-->
+            <div class="modal-content-inner full-art" style="
+                background: black; 
+            ">
+                <img src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/spacey.jpg">
+            </div>
+            <div class="info">
+                <div class="frosty-text">
+                    <h2>spacey</h2>
+                    <p>What can I say about spacey?</p>
+                </div>
+            </div>
+        </div>
     </div>
     
-    <div class="modal-content">
-        <!--Your modal content goes here-->
-        <div style="
-        width: 50%; 
-        height: 100vh; 
-        background: #000;
-        display: flex;
-    ">
-        <img style="
-            max-height: 100%;
-            max-width: 100%;
-            margin: auto;
-        " src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/spacey.jpg">
-    </div>
-    </div>
-</div>
-
-<script>
-    $("#spacey").animatedModal({
-        modalTarget:'spaceyModal',
-        animatedIn:'bounceInUp',
-        animatedOut:'bounceOutDown',
-        color: '#FFFFFF'
-    });
-</script>
+    <script>
+        $("#spacey").animatedModal({
+            modalTarget:'spaceyModal',
+            animatedIn:'bounceInUp',
+            animatedOut:'bounceOutDown',
+            color: '#FFFFFF'
+        });
+    </script>

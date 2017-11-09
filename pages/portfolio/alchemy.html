@@ -1,49 +1,44 @@
 <li>
-    <a id="alchemy" href="#alchemyModal">
-        <img
-            style="
-            width: 80%; 
-            padding: 10%; 
-            background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/alchemy-bg.jpg); 
-            background-size:cover;
-            background-position-x: center;
-            " 
-            src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/alchemy.png"
-        >
-    </a>
-</li>
-
-<!--DEMO01-->
-<div id="alchemyModal">
-    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-    <div class="close-alchemyModal closeModal"> 
-        <span id="close-1"></span>
-        <span id="close-2"></span>
-    </div>
+        <a class="design" id="alchemy" href="#alchemyModal">
+            <img
+                style="
+                background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/alchemy-bg.jpg); 
+                " 
+                src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/alchemy.png"
+            >
+        </a>
+    </li>
     
-    <div class="modal-content">
-        <!--Your modal content goes here-->
-        <div style="
-            width: 50%; 
-            height: 100vh; 
-            background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/alchemy-bg.jpg); 
-            background-size:cover;
-            background-position-x: center;
-            display: flex;
-        ">
-            <img style="
-                width: 80%;
-                margin: auto;
-            " src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/alchemy.png">
+    <!--DEMO01-->
+    <div id="alchemyModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-alchemyModal closeModal closeModal-white"> 
+            <span id="close-1"></span>
+            <span id="close-2"></span>
+        </div>
+        
+        <div class="modal-content">
+            <!--Your modal content goes here-->
+            <div class="modal-content-inner full-design" style="
+                background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/alchemy-bg.jpg); 
+            ">
+                <img src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/alchemy.png">
+            </div>
+            <div class="info">
+                
+                <div class="frosty-text">
+                    <h2>alchemy</h2>
+                    <p>What can I say about alchemy?</p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-
-<script>
-    $("#alchemy").animatedModal({
-        modalTarget:'alchemyModal',
-        animatedIn:'bounceInUp',
-        animatedOut:'bounceOutDown',
-        color: '#FFFFFF'
-    });
-</script>
+    
+    <script>
+        $("#alchemy").animatedModal({
+            modalTarget:'alchemyModal',
+            animatedIn:'bounceInUp',
+            animatedOut:'bounceOutDown',
+            color: '#FFFFFF'
+        });
+    </script>

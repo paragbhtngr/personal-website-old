@@ -1,50 +1,47 @@
 <li>
-    <a id="refit" href="#refitModal">
-        <img
-            style="
-            width: 80%; 
-            padding: 10%; 
-            background: #ECE9E6;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to top, #F3F3F3, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to top, #F3F3F3, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
-            " 
-            src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/refit.png"
-        >
-    </a>
-</li>
+        <a class="design" id="refit" href="#refitModal">
+            <img
+                style="
+                    background: #ECE9E6;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to top, #F3F3F3, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to top, #F3F3F3, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
+                " 
+                src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/refit.png"
+            >
+        </a>
+    </li>
 
-<!--DEMO01-->
-<div id="refitModal">
-    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-    <div class="close-refitModal closeModal"> 
-        <span id="close-1"></span>
-        <span id="close-2"></span>
+    <!--DEMO01-->
+    <div id="refitModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-refitModal closeModal"> 
+            <span id="close-1"></span>
+            <span id="close-2"></span>
+        </div>
+        
+        <div class="modal-content">
+            <!--Your modal content goes here-->
+            <div class="modal-content-inner full-design" style="
+                background: #ECE9E6;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to top, #F3F3F3, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to top, #F3F3F3, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
+            ">
+                <img src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/refit.png">
+            </div>
+            <div class="info">
+                <div class="frosty-text">
+                    <h2>refit</h2>
+                    <p>What can I say about refit?</p>
+                </div>
+            </div>
+        </div>
     </div>
     
-    <div class="modal-content">
-        <!--Your modal content goes here-->
-        <div style="
-        width: 50%; 
-        height: 100vh; 
-        background: #ECE9E6;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to top, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to top, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
-        display: flex;
-    ">
-        <img style="
-            max-width: 80%;
-            max-height: 80%;
-            margin: auto;
-        " src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/refit.png">
-    </div>
-    </div>
-</div>
-
-<script>
-    $("#refit").animatedModal({
-        modalTarget:'refitModal',
-        animatedIn:'bounceInUp',
-        animatedOut:'bounceOutDown',
-        color: '#FFFFFF'
-    });
-</script>
+    <script>
+        $("#refit").animatedModal({
+            modalTarget:'refitModal',
+            animatedIn:'bounceInUp',
+            animatedOut:'bounceOutDown',
+            color: '#FFFFFF'
+        });
+    </script>

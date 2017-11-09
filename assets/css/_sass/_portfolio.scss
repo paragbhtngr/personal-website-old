@@ -1,7 +1,6 @@
 .grid {
     max-width: 69em;
     list-style: none;
-    margin: 30px auto;
     padding: 0;
 }
 
@@ -9,9 +8,21 @@
     display: block;
     float: left;
     padding: 7px;
-    width: 250px;
+    width: calc(33% - 14px);
     opacity: 0;
 }
+@media screen and (max-width: 800px) {
+    .grid li {
+        width: calc(50% - 14px);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .grid li {
+        width: calc(100% - 14px);
+    }
+}
+
 
 .grid li.shown,
 .no-js .grid li,
@@ -25,7 +36,7 @@
     border: none;
     display: block;
     max-width: 100%;
-    border-radius: 25px;
+    border-radius: 0px;
 }
 
 .grid.effect-2 li.animate {
@@ -49,8 +60,8 @@
     position: absolute;
     right: 0;
     top: 0;
-    margin: 20px;
-    height: 20px;
+    margin: 10px;
+    height: 10px;
     padding: 10px 10px 3px 0px;
     #close-1 {
         height: 3px;
@@ -68,4 +79,108 @@
     }
 }
 
+.modal-content {
+    display: flex;
+    .modal-content-inner {
+        width: 50%; 
+        height: 100vh;         
+        display: flex;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position-x: center;
+        img {
+            margin: auto;
+        }
+    }
+    .info {
+        overflow: hidden;
+        position: relative;
+        background: inherit;
+        float: right;
+        color: black;
+        margin: 5%;
+        padding: 30px;
+        width: calc(50% - 10%);
+        border-radius: 0px;
+    }
 
+    .info-white {
+        color: white;
+    }
+    .frosted-glass{
+        position: absolute;
+        width: 110%;
+        height: 110%;
+        left: -25px;
+        right: 0;
+        top: -25px; 
+        bottom: 0;
+        box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.1);
+        background: inherit;
+        filter: blur(20px);
+    }
+}
+
+.design {
+    img {
+        width: 80%; 
+        padding: 10%; 
+        background-size:cover;
+        background-position-x: center;    
+    }
+}
+
+.full-design {
+    img {
+        width: 80%;
+        padding: 10%;
+        background-size:cover;
+        background-position-x: center;   
+    }
+}
+
+.art {
+    img {
+        width: 100%; 
+        padding: 0%; 
+        background-size:cover;
+        background-position-x: center;    
+    }
+}
+
+.full-art {
+    img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .modal-content {  
+        flex-direction: column;   
+        .modal-content-inner {
+            width: 100%;
+        } 
+        img {
+            margin: auto;
+        }
+    }
+    .info {
+        overflow: hidden;
+        position: relative;
+        background: inherit;
+        float: right;
+        color: black;
+        margin: 0% !important;
+        padding: 15px !important;
+        width: 100% !important;
+        border-radius: 0px;
+    }
+
+    .closeModal-white {
+        #close-1, #close-2 {
+            background: white;
+        }
+    }
+}

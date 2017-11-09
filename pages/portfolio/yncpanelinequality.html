@@ -1,44 +1,38 @@
 <li>
-    <a id="yncpanelinequality" href="#yncpanelinequalityModal">
-        <img
-            style="
-            width: 100%; 
-            " 
-            src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/yncpanelinequality.jpg"
-        >
-    </a>
-</li>
-
-<!--DEMO01-->
-<div id="yncpanelinequalityModal">
-    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-    <div class="close-yncpanelinequalityModal closeModal"> 
-        <span id="close-1"></span>
-        <span id="close-2"></span>
+        <a class="art" id="yncpanelinequality" href="#yncpanelinequalityModal">
+            <img src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/yncpanelinequality.jpg">
+        </a>
+    </li>
+        
+    <!--DEMO01-->
+    <div id="yncpanelinequalityModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-yncpanelinequalityModal closeModal closeModal-white"> 
+            <span id="close-1"></span>
+            <span id="close-2"></span>
+        </div>
+        
+        <div class="modal-content">
+            <!--Your modal content goes here-->
+            <div class="modal-content-inner full-art" style="
+                background: black; 
+            ">
+                <img src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/yncpanelinequality.jpg">
+            </div>
+            <div class="info">           
+                <div class="frosty-text">
+                    <h2>yncpanelinequality</h2>
+                    <p>What can I say about yncpanelinequality?</p>
+                </div>
+            </div>
+        </div>
     </div>
     
-    <div class="modal-content">
-        <!--Your modal content goes here-->
-        <div style="
-        width: 50%; 
-        height: 100vh; 
-        background: #000;
-        display: flex;
-    ">
-        <img style="
-            max-height: 100%;
-            max-width: 100%;
-            margin: auto;
-        " src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/yncpanelinequality.jpg">
-    </div>
-    </div>
-</div>
-
-<script>
-    $("#yncpanelinequality").animatedModal({
-        modalTarget:'yncpanelinequalityModal',
-        animatedIn:'bounceInUp',
-        animatedOut:'bounceOutDown',
-        color: '#FFFFFF'
-    });
-</script>
+    <script>
+        $("#yncpanelinequality").animatedModal({
+            modalTarget:'yncpanelinequalityModal',
+            animatedIn:'bounceInUp',
+            animatedOut:'bounceOutDown',
+            color: '#FFFFFF'
+        });
+    </script>

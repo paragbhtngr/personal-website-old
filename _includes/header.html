@@ -1,7 +1,11 @@
 <header class="site-header">
-  <h3 class="site-title">
-    <a href="{{ site.github.url }}/">{{ site.data.settings.title }}</a>
-  </h3>
+  <div class="header-banner">
+    <img class="header-img" src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/PB logo simple.png" alt="">
+    <h3 class="site-title">
+      <a href="{{ site.github.url }}/">{{ site.data.settings.title }}</a>
+    </h3>
+  </div>
+  
   <nav class="menu-list">
     {% for item in site.data.settings.menu %}
       <a href="{{ site.github.url }}/{{ item.folder }}/{{ item.file }}" class="menu-link">{{ item.name }}</a>
@@ -17,10 +21,17 @@
       {% for item in site.data.settings.menu %}
         <a href="{{ site.github.url }}/pages/{{ item.file }}" class="menu-link">{{ item.name }}</a>
       {% endfor %}
-
-      {% for item in site.data.settings.social %}
-        <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
-      {% endfor %}
+      <div class="menu-link" style="display: flex; justify-content: center;">
+        {% for item in site.data.settings.social %}
+          <a href="{{ item.link }}" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </header>
+
+<script>
+  $(".dropbtn").click(function(){
+    $(".dropdown").toggleClass("dropdown-active");
+  });
+</script>
