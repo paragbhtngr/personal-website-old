@@ -92,8 +92,9 @@
   overflow: hidden;
 }
 .related-title {
-  float: right;
+  float: left;
   padding-bottom: .5rem;
+  margin-top: 10px;
 }
 @media (max-width: $container-width) {
   .related-thumbnail{

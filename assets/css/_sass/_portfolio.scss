@@ -37,6 +37,32 @@
     display: block;
     max-width: 100%;
     border-radius: 0px;
+    transform: translateY(0px);
+    transition: transform 0.1s ease-in-out;
+    &:after {
+        content: "";
+        -webkit-box-shadow: 0px 27px 125px -46px rgba(0, 0, 0, 0.52);
+        -moz-box-shadow: 0px 27px 125px -46px rgba(0, 0, 0, 0.52);
+        box-shadow: 0px 13px 45px -15px rgba(0, 0, 0, 0.52);
+        width: 100%;
+        height: inherit;
+        padding-bottom: 100px;
+        z-index: -1;
+        position: absolute;
+        margin-top: -100px;
+        opacity: 0;
+        transform: translateY(0px);
+        transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+    }
+    &:hover {
+        -ms-transform: translateY(-0px) scale(1.005);
+        -webkit-transform: translateY(-0px) scale(1.005);
+        transform: translateY(0px) scale(1.005);
+        &:after {
+            opacity: 1;
+            transform: translateY(-5px);
+        }
+    }
 }
 
 .grid.effect-2 li.animate {
@@ -63,6 +89,7 @@
     margin: 10px;
     height: 10px;
     padding: 10px 10px 3px 0px;
+    z-index: 100;
     #close-1 {
         height: 3px;
         width: 20px;
@@ -82,12 +109,10 @@
 .modal-content {
     display: flex;
     .modal-content-inner {
-        width: 50%; 
-        height: 100vh;         
+        width: 50%;      
         display: flex;
         background-size:cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
         background-position-x: center;
         img {
             margin: auto;
@@ -99,10 +124,15 @@
         background: inherit;
         float: right;
         color: black;
-        margin: 5%;
-        padding: 30px;
+        margin: 0%;
+        padding: 40px;
         width: calc(50% - 10%);
         border-radius: 0px;
+        .frosty-text {
+            h2 {
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
     }
 
     .info-white {
@@ -133,7 +163,8 @@
 
 .full-design {
     img {
-        width: 80%;
+        max-width: 80%;
+        max-height: 80%;
         padding: 10%;
         background-size:cover;
         background-position-x: center;   
@@ -156,11 +187,12 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     .modal-content {  
         flex-direction: column;   
         .modal-content-inner {
             width: 100%;
+            display: block;
         } 
         img {
             margin: auto;
@@ -174,8 +206,13 @@
         color: black;
         margin: 0% !important;
         padding: 15px !important;
-        width: 100% !important;
-        border-radius: 0px;
+        width: calc(100% - 30px) !important;
+        border-radius: 0px; 
+        .frosty-text {
+            p {
+                font-size: 0.8rem;
+            }
+        }
     }
 
     .closeModal-white {
@@ -183,4 +220,19 @@
             background: white;
         }
     }
+}
+
+@media screen and (min-width: 1025px) {
+    .modal-content {
+        .modal-content-inner {
+            height: 100vh;    
+        }
+        .info {
+            max-width: 50%;
+            padding-right: 80px;
+            height: calc(100vh - 80px);   
+            overflow-y: scroll;
+        }
+    }
+    
 }

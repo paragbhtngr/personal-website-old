@@ -1,10 +1,10 @@
-$icon-transition-time: 1.0s;
+$icon-transition-time: 0.25s;
 $envelope-color: #f39c12;
 $twitter-color: #00aced;
-$instagram-color: #375989;
+$instagram-color: #bc2a8d;
 $github-color: #343434;
 $linkedin-color: #0073a4;
-$facebook-color: #3d5b99;
+$facebook-color: #3865C0;
 $google-color: #e64a41;
 $pinterest-color: #bd081c;
 $medium-color: #00AB6C;
@@ -47,7 +47,7 @@ $rss-color: #ff6600;
   @include social-media-icon($linkedin-color, $icon-transition-time);
 }
 
-.fa-facebook {
+.fa-facebook-square {
   padding: 5px;
   @include social-media-icon($facebook-color, $icon-transition-time);
 }

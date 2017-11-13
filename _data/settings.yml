@@ -1,4 +1,4 @@
-title:  "PARAG"
+title:  "PARAG BHATNAGAR"
 tagline: "Personal Website"
 description:
 
@@ -10,17 +10,18 @@ disqus:
   disqus_shortname: 'parag-bhatnagar'
 
 menu:
-- {name: 'Work', folder: 'pages', file: 'portfolio.html'}
-- {name: 'Blog', folder: 'pages', file: 'blog.html'}
-- {name: 'Posts', folder: 'pages', file: 'posts.html'}
-- {name: 'Doc', folder: 'pages', file: 'documentation.html'}
-- {name: 'About', folder: 'pages', file: 'about.html'}
-- {name: 'Contact', folder: 'pages', file: 'contact.html'}
+- {name: 'Art & Design', folder: 'pages', file: 'portfolio.html'}
+- {name: 'Brain Droppings', folder: 'pages', file: 'blog.html'}
+- {name: 'Random Ramblings', folder: 'pages', file: 'posts.html'}
+# - {name: 'Doc', folder: 'pages', file: 'documentation.html'}
+- {name: 'Who Am I', folder: 'pages', file: 'about.html'}
+- {name: 'Talk To Me', folder: 'pages', file: 'contact.html'}
 
 social:
-- {icon: 'facebook', link: 'https://www.facebook.com/paragbhtngr'}
+- {icon: 'facebook-square', link: 'https://www.facebook.com/paragbhtngr'}
 - {icon: 'instagram', link: 'https://instagram.com/paragbhtngr'}
+- {icon: 'github', link: 'https://github.com/paragbhtngr'}
 - {icon: 'envelope', link: 'mailto:paragbhtngr@gmail.com'}
-- {icon: 'rss-square', link: 'feed.xml'}
+# - {icon: 'rss-square', link: 'feed.xml'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
