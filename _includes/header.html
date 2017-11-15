@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="header-banner">
-    <img class="header-img" src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/PB logo simple.png" alt="">
+    <img class="header-img" src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/PB logo simple 2.png" alt="">
     <h3 class="site-title">
       <a href="{{ site.github.url }}/">{{ site.data.settings.title }}</a>
     </h3>
@@ -8,7 +8,7 @@
   
   <nav class="menu-list">
     {% for item in site.data.settings.menu %}
-      <a href="{{ site.github.url }}/{{ item.folder }}/{{ item.file }}" class="menu-link">{{ item.name }}</a>
+      <a href="{{ site.github.url }}/{{ item.folder }}/{{ item.file }}" class="menu-link menu-title">{{ item.name }}</a>
     {% endfor %}
 
     {% for item in site.data.settings.social %}
