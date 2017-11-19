@@ -2,7 +2,7 @@
 layout: post
 title: "Math and Code Formatting"
 author: "Paul Le"
-categories: sample
+categories: junk
 tags: [sample]
 image:
   feature: nature-1.jpg

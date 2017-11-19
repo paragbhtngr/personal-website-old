@@ -1,0 +1,136 @@
+.bc-container {
+    perspective: 800px;
+    
+    /* Styling */  
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+.business-card {
+    /* Styling */
+    width: 600px;
+    height: 340px;
+    background: rgb(20,20,20);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);  
+    
+    /* Card flipping effects */
+    transform-style: preserve-3d;
+    transition: 0.6s; 
+}
+.bc-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* Fix Chrome rendering bug */
+    transform: rotate(0deg) translateZ(1px);
+}
+
+/* Flip the card on hover */
+.bc-container:hover .business-card,
+.bc-back {
+    transform: rotateY(-180deg) translateZ(1px);
+}
+
+/* Front styling */
+.bc-front {
+    /* Center the name + outline (almost) */
+    line-height: 390px; /* Height - some (because visual center is a little higher than actual center) */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bc-logo {
+    display: inline-block;
+    padding: 15px 40px;
+    margin: 0px !important;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight: normal;
+    line-height: 32px;
+    letter-spacing: 8px;
+
+    border-top: 2px solid #ff00cc;
+    border-bottom: 2px solid #7941E1;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff00cc), to(#7941E1));
+    background-image: -webkit-linear-gradient(to top, #7941E1, #ff00cc);
+    background-image: -moz-linear-gradient(to top, #7941E1, #ff00cc), -moz-linear-gradient(to top, #7941E1, #ff00cc);
+    background-image: -o-linear-gradient(to top, #7941E1, #ff00cc), -o-linear-gradient(to top, #7941E1, #ff00cc);
+    background-image: linear-gradient(to top, #7941E1, #ff00cc), linear-gradient(to top, #7941E1, #ff00cc); 
+    -moz-background-size:2px 100%;
+    background-size:2px 100%;
+    background-position:0 0, 100% 0;
+    background-repeat:no-repeat;
+}
+
+/* Back styling */
+.bc-back {
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.bc-name {
+    color: #3B3B3B;
+    margin-bottom: 0;
+}
+.bc-title {
+    padding: 30px;
+    div {
+        color: #7941E1;
+    }
+}
+.bc-info {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #3b3b3b;
+    p {
+        line-height: 0.5;
+    }
+}
+.property {
+    color: #7941E1;
+}
+
+.watermark {
+    position: absolute;
+    opacity: 0.03;
+    right: -50%;
+    top: 25%;
+    width: 80vw;
+}
+
+/* Make semi-responsive */
+@media (max-width:700px) {
+    .business-card {
+        width: calc(100vw - 40px);
+        height: calc(60vw - 40px);
+        font-size: 0.7em;
+        .bc-logo {
+            padding: 10px 10px;
+            max-width: 80%;
+        }
+        .bc-title {
+            padding: 10px;
+            h3 {
+                font-size: 1.3em;
+            }
+        }
+        .bc-info {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #3b3b3b;
+            p {
+                line-height: 0.5;
+                font-size: 0.9em;
+            }
+        }
+    }
+    .bc-container:hover .business-card { 
+        transform: rotateY(-180deg) translateZ(1px); 
+    }
+}

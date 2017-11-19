@@ -38,30 +38,37 @@
     max-width: 100%;
     border-radius: 0px;
     transform: translateY(0px);
-    transition: transform 0.1s ease-in-out;
+
+    // -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.13);
+    // -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.13);
+    // box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.13);
+
+    // transition: transform 0.1s ease-in-out;
+    
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     &:after {
         content: "";
-        -webkit-box-shadow: 0px 27px 125px -46px rgba(0, 0, 0, 0.52);
-        -moz-box-shadow: 0px 27px 125px -46px rgba(0, 0, 0, 0.52);
-        box-shadow: 0px 13px 45px -15px rgba(0, 0, 0, 0.52);
+        // -webkit-box-shadow: 0 14px 28px rgba(211, 185, 230, 0.38), 0 10px 10px rgba(193, 185, 197, 0.94);
+        // -moz-box-shadow: 0 14px 28px rgba(211, 185, 230, 0.38), 0 10px 10px rgba(193, 185, 197, 0.94);
+        box-shadow: 0 14px 28px rgba(211, 185, 230, 0.38), 0 10px 10px rgba(193, 185, 197, 0.94);
+        opacity: 0;
         width: 100%;
-        height: inherit;
-        padding-bottom: 100px;
+        height: 100%;
         z-index: -1;
         position: absolute;
-        margin-top: -100px;
+        top: 0;
         opacity: 0;
-        transform: translateY(0px);
-        transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+        transition: opacity 0.3s cubic-bezier(.25,.8,.25,1);
     }
     &:hover {
         -ms-transform: translateY(-0px) scale(1.005);
         -webkit-transform: translateY(-0px) scale(1.005);
         transform: translateY(0px) scale(1.005);
+        
         &:after {
             opacity: 1;
-            transform: translateY(-5px);
         }
+        
     }
 }
 
@@ -106,6 +113,30 @@
     }
 }
 
+.card-title {
+    opacity: 0;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 1.3em;
+    background: #333399;
+    background: -webkit-linear-gradient(to top, rgba(51, 51, 153, 1), rgba(255, 0, 204, 0.17));
+    background: linear-gradient(to top, rgb(51, 51, 153), rgba(255, 0, 204, 0.17));
+    transition: opacity 0.3s cubic-bezier(.25,.8,.25,1);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    &:hover {
+        opacity: 1;
+    }
+}
+
 .modal-content {
     display: flex;
     .modal-content-inner {
@@ -131,6 +162,9 @@
         .frosty-text {
             h2 {
                 font-family: 'Montserrat', sans-serif;
+            }
+            p {
+                text-align: justify;
             }
         }
     }

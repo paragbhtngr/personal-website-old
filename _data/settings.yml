@@ -10,12 +10,12 @@ disqus:
   disqus_shortname: 'parag-bhatnagar'
 
 menu:
-- {name: 'Art & Design', folder: 'pages', file: 'portfolio.html'}
-- {name: 'Brain Droppings', folder: 'pages', file: 'blog.html'}
-- {name: 'Random Ramblings', folder: 'pages', file: 'posts.html'}
+- {name: 'Portfolio', folder: 'pages', file: 'portfolio.html'}
+- {name: 'Blog', folder: 'pages', file: 'blog.html'}
+# - {name: 'Random Thoughts', folder: 'pages', file: 'posts.html'}
 # - {name: 'Doc', folder: 'pages', file: 'documentation.html'}
-- {name: 'Who Am I', folder: 'pages', file: 'about.html'}
-- {name: 'Talk To Me', folder: 'pages', file: 'contact.html'}
+- {name: 'About Me', folder: 'pages', file: 'about.html'}
+- {name: 'Contact', folder: 'pages', file: 'contact.html'}
 
 social:
 - {icon: 'facebook-square', link: 'https://www.facebook.com/paragbhtngr'}

@@ -2,7 +2,7 @@
 layout: post
 title: "Free Code Camp"
 author: "Paul Le"
-categories: resources
+categories: junk
 tags: [sample]
 image:
   feature: city-4.jpg

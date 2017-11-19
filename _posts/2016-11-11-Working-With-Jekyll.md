@@ -2,8 +2,8 @@
 layout: post
 title: "Working With Jekyll"
 author: "Paul Le"
-categories: documentation
-tags: [documentation,sample]
+categories: junk
+tags: [sample]
 image:
   feature: arctic-1.jpg
 ---

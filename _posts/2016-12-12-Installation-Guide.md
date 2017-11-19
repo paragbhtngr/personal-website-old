@@ -2,8 +2,8 @@
 layout: post
 title: "Installation Guide"
 author: "Paul Le"
-categories: documentation
-tags: [documentation,sample]
+categories: junk
+tags: [sample]
 image:
   feature: city-2.jpg
 ---

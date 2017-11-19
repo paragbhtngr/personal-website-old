@@ -2,7 +2,7 @@
 layout: post
 title: "Death to Stock"
 author: "Paul Le"
-categories: resources
+categories: junk
 tags: [sample]
 image:
   feature: cuba-2.jpg

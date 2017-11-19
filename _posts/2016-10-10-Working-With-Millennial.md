@@ -2,8 +2,8 @@
 layout: post
 title: "Working With Millennial"
 author: "Paul Le"
-categories: documentation
-tags: [documentation,sample]
+categories: junk
+tags: [sample]
 image:
   feature: city-1.jpg
 ---
