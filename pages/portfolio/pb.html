@@ -1,55 +1,11 @@
-<li>
-        <a class="design" id="pb" href="#pbModal">
-            <img
-                style="
-                background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/pb-bg.jpg); 
-                " 
-                src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/pb.png"
-            >
-            <h4 class="card-title">Personal Logo Design</h4>
-        </a>
-    </li>
-    
-    <!--DEMO01-->
-    <div id="pbModal">
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <div class="close-pbModal closeModal"> 
-            <span id="close-1"></span>
-            <span id="close-2"></span>
-        </div>
-        
-        <div class="modal-content">
-            <!--Your modal content goes here-->
-            <div class="modal-content-inner full-design" style="
-                background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/pb-bg.jpg); 
-            ">
-                <img src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/pb.png">
-            </div>
-            <div class="info">
-                <div class="frosty-text">
-                    <h2>Personal Logo Design</h2>
-                    <p>
-                        Designing personal branding is a bitch - I spent ages thinking about what kind of
-                        image would best describe my art and design. At the time, I did a lot of comic book
-                        art and portraits. These were the two visual influences that informed the design of
-                        the logo.
-                    </p>
-                    <p>
-                        It incorporates the visual elements of the letter P, the eyes, which are usually my
-                        starting point for a portrait, and the San Diego Comic-Con logo. I made 2 versions,
-                        one with a white chrome look that's a bit unfashionable these days given attitudes to
-                        skeuomorphic design, so I created a flatter version of the design in black.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        $("#pb").animatedModal({
-            modalTarget:'pbModal',
-            animatedIn:'bounceInUp',
-            animatedOut:'bounceOutDown',
-            color: '#FFFFFF'
-        });
-    </script>
+<li class="grid-item">
+    <a class="design" id="pb" href="#pbModal">
+        <img
+        style="
+        background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/pb-bg-sm.jpg); 
+        " 
+        src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/pb-sm.png"
+        >
+        <h4 class="card-title">Personal Logo Design</h4>
+    </a>
+</li>

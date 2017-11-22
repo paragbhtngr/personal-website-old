@@ -1,47 +1,11 @@
-<li>
-        <a class="design" id="anquan" href="#anquanModal">
-            <img
-                style="
-                background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/anquan-bg.jpg); 
-                " 
-                src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/anquan.png"
-            >
-            <h4 class="card-title">Anquan Capital</h4>
-        </a>
-    </li>
-    
-    <!--DEMO01-->
-    <div id="anquanModal">
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <div class="close-anquanModal closeModal"> 
-            <span id="close-1"></span>
-            <span id="close-2"></span>
-        </div>
-        
-        <div class="modal-content">
-            <!--Your modal content goes here-->
-            <div class="modal-content-inner full-design"  style="
-                background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/anquan-bg.jpg); 
-            ">
-                <img src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/anquan.png">
-            </div>
-            <div class="info">
-                <div class="frosty-text">
-                    <h2>Anquan Capital</h2>
-                    <p>
-                        Logo and website design for Anquan Capital. You can see the finished website design 
-                        live <a style="color: #4169e1" href="http://www.anquancapital.com/">here</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        $("#anquan").animatedModal({
-            modalTarget:'anquanModal',
-            animatedIn:'bounceInUp',
-            animatedOut:'bounceOutDown',
-            color: '#FFFFFF'
-        });
-    </script>
+<li class="grid-item">
+    <a class="design" id="anquan" href="#anquanModal">
+        <img
+        style="
+        background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/anquan-bg-sm.jpg); 
+        " 
+        src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/anquan.png"
+        >
+        <h4 class="card-title">Anquan Capital</h4>
+    </a>
+</li>

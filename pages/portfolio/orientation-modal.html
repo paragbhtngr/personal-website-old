@@ -1,0 +1,45 @@
+<!--DEMO01-->
+<div id="orientationModal">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-orientationModal closeModal closeModal-white"> 
+        <span id="close-1"></span>
+        <span id="close-2"></span>
+    </div>
+    
+    <div class="modal-content">
+        <!--Your modal content goes here-->
+        <div class="modal-content-inner full-design" style="
+        background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/orientation-bg.jpg); 
+        ">
+        <img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/orientation.png">
+    </div>
+    <div class="info">
+        <div class="frosty-text">
+            <h2>Yale-NUS College Orientation 2015</h2>
+            <p>
+                Yale-NUS College Orientations normally have a theme. My year was take flight, if memory serves. The year after that
+                was 'Clash of Civilizations'. In the year of 2015, the theme was 'Clash of Seasons' (I'm personally still waiting for
+                'Clash of Clans' at some point). Anyway, there were 3 seasons assigned to the 3 Residential Colleges - Saga was Winter,
+                Elm was Fall or Autumn, and Cendana was Spring, leaving out the only season it is in Singapore all the time - Summer.
+            </p>
+            <p>
+                In my mind, there were a few ways of approaching these designs, however the one I really wanted to go for was Medieval
+                kingdom style coats of arms, almost like house banners from Game of Thrones. So I needed a tree that was ornate enough
+                for the part - The Tree of Gondor was for me the correct amount of ornate, with its curly branches symmetrical designed
+                look. This served as the starting point that would be common to all the three college banner designs. The color scheme
+                was decided by the official residential college colors. Personally, my preference would have been black for winter, red
+                for autumn and green for spring - but try arguing that with a committee and see how far that gets you.
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    $("#orientation").animatedModal({
+        modalTarget:'orientationModal',
+        animatedIn:'bounceInUp',
+        animatedOut:'bounceOutDown',
+        color: '#FFFFFF'
+    });
+</script>

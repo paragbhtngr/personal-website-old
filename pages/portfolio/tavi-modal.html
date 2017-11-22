@@ -1,0 +1,43 @@
+<!--DEMO01-->
+<div id="taviModal">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-taviModal closeModal closeModal-white"> 
+        <span id="close-1"></span>
+        <span id="close-2"></span>
+    </div>
+    
+    <div class="modal-content">
+        <!--Your modal content goes here-->
+        <div class="modal-content-inner full-design" style="
+        background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/tavi-bg.jpg); 
+        ">
+        <img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/tavi.png">
+    </div>
+    <div class="info">
+        <div class="frosty-text">
+            <h2>Tavi</h2>
+            <p>
+                Tavi was designed to be a travel app that used your facebook data to suggest travel destinations 
+                and itineraries for you. Sort of like Google Trips, but this was before Google Trips was a 
+                thing.
+            </p>
+            <p>
+                The name for the application is a Japanese word, which inspired the origami crane logo. Given 
+                origami's Japanese roots it felt like an appropriate styling for the logo. The choice of a crane
+                was fairly straightforward at that point, because it represents the freedom that the app hoped to
+                provide. The freedom to just be able to fly anywhere you want seemed to be best expressed by the
+                crane.
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    $("#tavi").animatedModal({
+        modalTarget:'taviModal',
+        animatedIn:'bounceInUp',
+        animatedOut:'bounceOutDown',
+        color: '#FFFFFF'
+    });
+</script>

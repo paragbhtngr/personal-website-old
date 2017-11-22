@@ -1,0 +1,47 @@
+<!--DEMO01-->
+<div id="wonderwallModal">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-wonderwallModal closeModal closeModal-white"> 
+        <span id="close-1"></span>
+        <span id="close-2"></span>
+    </div>
+    
+    <div class="modal-content">
+        <!--Your modal content goes here-->
+        <div class="modal-content-inner full-design" style="
+        background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/wonderwall-bg.jpg); 
+        ">
+        <img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/wonderwall.png">
+    </div>
+    <div class="info">
+        <div class="frosty-text">
+            <h2>Wonderwalls</h2>
+            <p>
+                Logo Design for a hackathon project called Wonderwalls - an augmented reality application 
+                that lets you create virtual graffiti anywhere on the face of the earth using your phone.
+            </p>
+            <p>
+                Imagine leaving a message, a picture or a doodle anywhere on the face of the earth for 
+                everyone, someone special, or even just for yourself. All the creativity and the freedom
+                to create your own personal Banksy, without any spray paint, mess, or cops pulling you up
+                for vandalism. Wonderwalls was meant to allow you to say it without having to spray it.
+            </p>
+            <p>
+                Using geolocation, and compass direction to get an approximate pinpoint on where you were
+                and which direction you were facing, Wonderwalls would match your camera's view with 
+                the location data using computer vision and display any grafitti tagged there that you had
+                created or that had been shared with you.
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    $("#wonderwall").animatedModal({
+        modalTarget:'wonderwallModal',
+        animatedIn:'bounceInUp',
+        animatedOut:'bounceOutDown',
+        color: '#FFFFFF'
+    });
+</script>

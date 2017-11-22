@@ -1,54 +1,10 @@
-<li>
-        <a class="design" id="nullify" href="#nullifyModal">
-            <img
-                style="
-                background: #eef2f3;" 
-                src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/nullify.png"
-            >
-            <h4 class="card-title">Nullify</h4>
-        </a>
-    </li>
-    
-    <!--DEMO01-->
-    <div id="nullifyModal">
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <div class="close-nullifyModal closeModal"> 
-            <span id="close-1"></span>
-            <span id="close-2"></span>
-        </div>
-        
-        <div class="modal-content">
-            <!--Your modal content goes here-->
-            <div class="modal-content-inner full-design" style="
-                background: #8e9eab;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
-            ">
-                <img src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/nullify.png">
-            </div>
-            <div class="info">
-                <div class="frosty-text">
-                    <h2>Nullify</h2>
-                    <p>
-                        Nullify was a fire detection startup that received the NUS Practicum grant with a patented design for fire detection 
-                        systems using computer vision and deep learning to understand ignition and fire spread patterns. The logo and visual
-                        identity of the logo was inspired by thermostat designs, the phi (Φ) symbol and the power symbol (<i class="fa fa-power-off" aria-hidden="true"></i>).
-                        Since we were dealing with fires, blue-green was the clear choice to go for and were the exact opposite colors of a fire.
-                        (in fact, if you hue-rotate the colors of the nullify logo by 180-ish degrees, you get the colors of a fire - almost, since
-                        some artistic license was taken to make the colors a bit more appealing).
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        $("#nullify").animatedModal({
-            modalTarget:'nullifyModal',
-            animatedIn:'bounceInUp',
-            animatedOut:'bounceOutDown',
-            color: '#FFFFFF'
-        });
-    </script>
-
-
+<li class="grid-item">
+    <a class="design" id="nullify" href="#nullifyModal">
+        <img
+        style="
+        background: #eef2f3;" 
+        src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/nullify-sm.png"
+        >
+        <h4 class="card-title">Nullify</h4>
+    </a>
+</li>

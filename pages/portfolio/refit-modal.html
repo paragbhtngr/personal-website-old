@@ -1,0 +1,46 @@
+<!--DEMO01-->
+<div id="refitModal">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-refitModal closeModal"> 
+        <span id="close-1"></span>
+        <span id="close-2"></span>
+    </div>
+    
+    <div class="modal-content">
+        <!--Your modal content goes here-->
+        <div class="modal-content-inner full-design" style="
+        background: #ECE9E6;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #F3F3F3, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #F3F3F3, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
+        ">
+        <img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/refit.png">
+    </div>
+    <div class="info">
+        <div class="frosty-text">
+            <h2>Refit Equipments</h2>
+            <p>
+                Refit Equipments Pvt Ltd was an orthopaedics manufacturing and distribution company. The logo was a redesign of a draft logo
+                made early in the creation of the company, and prominently featured red as its primary color and blue as its secondary color.
+                I decided to keep the red primary color in the design of the new logo. For the shape I looked at other players in the 
+                orthopaedics industry, who all seemed to feature active figures jumping or stretching with their arms out. I wanted to
+                incorporate that shape and visual style into the logo. The three visual elements I combined to form the logo were the letter
+                R, a double arrow chevron to denote moving forward and upward and the general curve and feel of the active human form in logos
+                from similar companies in the industry.
+            </p>
+            <p>
+                A flat version of the design was also created for printing on small objects and packaging where high quality versions of the
+                logo could not be used.
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    $("#refit").animatedModal({
+        modalTarget:'refitModal',
+        animatedIn:'bounceInUp',
+        animatedOut:'bounceOutDown',
+        color: '#FFFFFF'
+    });
+</script>

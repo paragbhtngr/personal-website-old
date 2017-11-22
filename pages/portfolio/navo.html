@@ -1,44 +1,11 @@
-<li>
-        <a class="design" id="navo" href="#navoModal">
-            <img
-                style="
-                background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/navo-bg.jpg); 
-                " 
-                src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/navo.png"
-            >
-            <h4 class="card-title">Navo</h4>
-        </a>
-    </li>
-    
-    <!--DEMO01-->
-    <div id="navoModal">
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <div class="close-navoModal closeModal closeModal-white"> 
-            <span id="close-1"></span>
-            <span id="close-2"></span>
-        </div>
-        
-        <div class="modal-content">
-            <!--Your modal content goes here-->
-            <div class="modal-content-inner full-design" style="
-                background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/navo-bg.jpg); 
-            ">
-                <img src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/navo.png">
-            </div>
-            <div class="info">
-                <div class="frosty-text">
-                    <h2>navo</h2>
-                    <p>What can I say about navo?</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        $("#navo").animatedModal({
-            modalTarget:'navoModal',
-            animatedIn:'bounceInUp',
-            animatedOut:'bounceOutDown',
-            color: '#FFFFFF'
-        });
-    </script>
+<li class="grid-item">
+    <a class="design" id="navo" href="#navoModal">
+        <img
+        style="
+        background-image: url({{ site.url }}{{ site.baseurl }}/assets/img/portfolio/navo-bg.jpg); 
+        " 
+        src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/navo.png"
+        >
+        <h4 class="card-title">Navo</h4>
+    </a>
+</li>
