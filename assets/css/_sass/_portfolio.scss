@@ -156,9 +156,11 @@
         float: right;
         color: black;
         margin: 0%;
+        opacity: 0;
         padding: 40px;
         width: calc(50% - 80px);
         border-radius: 0px;
+        min-width: 300px;
         .frosty-text {
             h2 {
                 font-family: 'Montserrat', sans-serif;
@@ -183,6 +185,13 @@
         box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.1);
         background: inherit;
         filter: blur(20px);
+    }
+}
+
+[class$="Modal-on"],
+[class*="Modal-on "] {
+    .info {
+        opacity: 1;
     }
 }
 
