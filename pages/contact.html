@@ -7,7 +7,19 @@ title: Contact
 
 {% include_relative businesscard.html %}
 
-<blockquote>
-    Look at that subtle colouring. The tasteful thickness.
-    Oh my God. It even has a watermark.
+<blockquote class="quote">
+    Look at that subtle off-white colouring. The tasteful thickness of it.
+    Oh my God, It even has a watermark.
 </blockquote>
+
+<blockquote class="quote">
+    Alright, so listen... Why don't you give me a call when you want to start taking things a little more seriously?
+    Here's my card.
+</blockquote>
+
+<script>
+    $( document ).ready(function() {
+        var q = Math.round(Math.random() * 1);
+        $(".quote:eq("+q+")").addClass("shown-quote");
+    });
+</script>

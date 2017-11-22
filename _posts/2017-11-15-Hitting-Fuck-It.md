@@ -1,18 +1,22 @@
 ---
 layout: post
-title: "Hitting Fuck It"
+title: "Hitting 'Fuck It'"
 categories: blog
-tags: [sample]
+tags: [reflection]
 image:
   feature: on-fire.jpeg
 ---
 
-Hi there! I'm Paul. I’m a physics major turned programmer. Ever since I first learned how to program while taking a scientific computing for physics course, I have pursued programming as a passion, and as a career. Below is a compilation of some of my favourite things that I have built over the years. You may find everything else on my <a href="http://github.com/lenpaul" target="_blank">Github</a> and <a href="https://codepen.io/lenpaul" target="_blank">Code Pen</a> profiles.
+_"Hi, I noticed you applied for the position of ... Do you have an online portfolio that you could share with us?"_
 
-### Jekyll Website Theme for Blogging
+_"Please add a link to your portfolio"_
 
-Lagrange is a minimalist Jekyll blog theme that I built from scratch. The purpose of this theme is to provide a simple, clean, content-focused blogging platform for your personal site or blog. This theme is currently being used by about three dozen people, with this number growing every day.
+_"Hey man, is there somewhere I could see more of your work online?"_
 
-<img src="{{ site.github.url }}/assets/img/demo.jpg">
+...
 
-Feel free to check out <a href="https://lenpaul.github.io/Lagrange/" target="_blank">the demo</a>, where you’ll also find instructions on <a href="https://lenpaul.github.io/Lagrange/journal/Installation-Guide.html">how to use install</a> and use the theme.
+How many people does it take to build a Web Designer's Portfolio?
+
+One Designer, and approximately fifty people bugging him to put something - anything - out there.
+
+It's a scary thing - putting yourself out there. Publicly exposing all your work to the cold harsh criticism of the internet. You don't know who might see your work, which makes every detail, every imperfection a hundred times worse than it actually is. Oh God, they're going to see that that thing isn't perfectly aligned or the kerning on those letters is off! What kind of amateur would put this shit together?

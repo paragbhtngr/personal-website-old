@@ -3,7 +3,7 @@ layout: post
 title: "Welcome to Millennial!"
 author: "Paul Le"
 categories: junk
-tags: [sample]
+tags: [none]
 image:
   feature: cuba-1.jpg
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Working With Jekyll"
 author: "Paul Le"
 categories: junk
-tags: [sample]
+tags: [none]
 image:
   feature: arctic-1.jpg
 ---

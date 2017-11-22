@@ -3,7 +3,7 @@ layout: post
 title: "Installation Guide"
 author: "Paul Le"
 categories: junk
-tags: [sample]
+tags: [none]
 image:
   feature: city-2.jpg
 ---

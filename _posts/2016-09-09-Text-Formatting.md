@@ -3,7 +3,7 @@ layout: post
 title: "Text Formatting"
 author: "Paul Le"
 categories: junk
-tags: [sample]
+tags: [none]
 image:
   feature: cuba-4.jpg
 ---
