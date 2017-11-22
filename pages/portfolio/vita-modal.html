@@ -1,0 +1,44 @@
+<!--DEMO01-->
+<div id="vitaModal">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-vitaModal closeModal"> 
+        <span id="close-1"></span>
+        <span id="close-2"></span>
+    </div>
+    
+    <div class="modal-content">
+        <!--Your modal content goes here-->
+        <div class="modal-content-inner full-design" style="
+        background: #ffffff;           
+        ">
+        <img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/vita.png">
+    </div>
+    <div class="info">
+        <div class="frosty-text">
+            <h2>Illustrations for VITA</h2>
+            <p>
+                A series of illustrations I did for a project called VITA - a tablet-based activity program to help non-expert caregivers 
+                facilitate engagement activities for long-term care residents who have dementia. It comprises a resident’s profile, 
+                containing tips for interaction and information for volunteers to quickly get to know their resident’s abilities, 
+                preferences, languages spoken, as well as a customised activity guide tailored to each resident’s ability level and 
+                interests.
+            </p>
+            <p>
+                I also created an animated video to the effect of explaining the procedure to new users. The video can be viewed here
+            </p>
+            <div style="width: 100%; text-align: center;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EbHFfdvOVhA" frameborder="0" allowfullscreen></iframe>                    
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    $("#vita").animatedModal({
+        modalTarget:'vitaModal',
+        animatedIn:'bounceInUp',
+        animatedOut:'bounceOutDown',
+        color: '#FFFFFF'
+    });
+</script>
