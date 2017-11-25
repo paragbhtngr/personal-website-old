@@ -18,7 +18,7 @@
       background: #8f8f8f;
       transition: 0.25s;
       &:hover {
-        background: #7941E1;
+        background-color: #7941E1;
       }
     }
   }
@@ -34,6 +34,7 @@
 }
 .site-header a {
   text-decoration: none;
+  text-transform: uppercase;
 }
 .site-title {
   font-size: 26px;
