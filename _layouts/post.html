@@ -41,11 +41,11 @@ layout: default
   </div>
 
   <div class="related">
+    <h2>While you're here...</h2>
     {% for tag in page.tags %}
       {% for mypost in site.tags[tag] limit:2 %}
         {% if listed_posts_urls contains mypost.url %}
         {% else %}
-        <h2>While you're here...</h2>
         {% endif %}
       {% endfor %}
     {% endfor %}

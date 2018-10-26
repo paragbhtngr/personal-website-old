@@ -36,7 +36,7 @@
     border: none;
     display: block;
     max-width: 100%;
-    border-radius: 16px;
+    border-radius: 0px;
     transform: translateY(0px);
     margin: 0px auto auto auto;
 
@@ -60,7 +60,6 @@
         top: 0;
         opacity: 0;
         transition: opacity 0.3s cubic-bezier(.25,.8,.25,1);
-        border-radius: 16px;
     }
     &:hover {
         -ms-transform: translateY(-0px) scale(1.005);
@@ -69,7 +68,6 @@
         
         &:after {
             opacity: 1;
-            border-radius: 16px;
         }
         
     }
@@ -103,8 +101,6 @@
     background: white;
     opacity: 0.5;
     border-radius: 50%;
-    transition: opacity 0.3s cubic-bezier(.25,.8,.25,1);
-    
     &:hover {
         opacity: 1;
     }
@@ -114,7 +110,6 @@
         background: black;
         display: block;
         transform: rotate(45deg) translateX(7.5px);
-        border-radius: 30%;
     }
     #close-2 {
         height: 3px;
@@ -122,7 +117,6 @@
         background: black;
         display: block;
         transform: rotate(-45deg) translateY(5.5px) translateX(2.5px);
-        border-radius: 30%;
     }
 }
 
@@ -145,7 +139,6 @@
     transition: opacity 0.3s cubic-bezier(.25,.8,.25,1);
     letter-spacing: 2px;
     text-transform: uppercase;
-    border-radius: 16px;
     &:hover {
         opacity: 1;
     }

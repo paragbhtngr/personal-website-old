@@ -6,9 +6,11 @@
   Site variables
 */
 
-$base-font-family: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Barlow:200,400,600|Archivo+Black|Open+Sans:300,400');
 
-$body-font-family: 'Lato', serif;
+$base-font-family: 'Barlow', sans-serif;
+
+$body-font-family: 'Open Sans', serif;
 
 $brand-color: black;
 

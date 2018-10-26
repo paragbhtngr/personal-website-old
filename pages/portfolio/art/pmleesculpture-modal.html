@@ -1,0 +1,38 @@
+<!--DEMO01-->
+<div id="pmleesculptureModal" class="gallery">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-pmleesculptureModal closeModal"> 
+        <span id="close-1"></span>
+        <span id="close-2"></span>
+    </div>
+    
+    <div class="modal-content">
+        <!--Your modal content goes here-->
+        <div class="modal-content-inner full-art">
+            <div class="gloss">
+                <img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/pmleesculpture.jpg">
+            </div>
+        </div>
+        <div class="info">
+            <div class="frosty-text">
+                <h2>Yale-NUS Inauguration Memento for PM Lee Hsien Loong</h2>
+                <p>
+                    A 3d printed sculpture I designed as a memento for Singapore's Prime Minister, Lee Hsien Loong, on the
+                    occasion of the inauguration of the Yale-NUS College Campus. 
+
+                    A full writeup on the design and creation process can be found
+                    <a href="{{ site.url }}{{ site.baseurl }}/blog/Designing-The-Yale-NUS-Inauguration-Sculpture">here</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#pmleesculpture").animatedModal({
+        modalTarget:'pmleesculptureModal',
+        animatedIn:'bounceInUp',
+        animatedOut:'bounceOutDown',
+        color: '#FFFFFF'
+    });
+</script>
