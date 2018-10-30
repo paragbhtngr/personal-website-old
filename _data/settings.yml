@@ -19,10 +19,10 @@ menu:
 - {name: 'Contact', folder: 'pages', file: 'contact.html'}
 
 social:
-- {icon: 'facebook-square', link: 'https://www.facebook.com/paragbhtngr'}
-- {icon: 'instagram', link: 'https://instagram.com/paragbhtngr'}
-- {icon: 'github', link: 'https://github.com/paragbhtngr'}
-- {icon: 'envelope', link: 'mailto:paragbhtngr@gmail.com'}
+- {icon: 'fab fa-lg fa-facebook-square', link: 'https://www.facebook.com/paragbhtngr'}
+- {icon: 'fab fa-lg fa-instagram', link: 'https://instagram.com/paragbhtngr'}
+- {icon: 'fab fa-lg fa-github', link: 'https://github.com/paragbhtngr'}
+- {icon: 'fas fa-lg fa-envelope', link: 'mailto:paragbhtngr@gmail.com'}
 # - {icon: 'rss-square', link: 'feed.xml'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer

@@ -9,8 +9,13 @@ title: Home
         <h2 style="font-size: 2rem; color: rgba(255,255,255,0.7)">
             I'm Parag
         </h2>
-        <p style="font-size: 1.5rem; color: rgba(255,255,255,0.7); max-width: 600px;">
-            I draw, I design, and I develop. Feel free to check out my stuff ...well ...here.
+        <p style="font-size: 1.5rem; color: rgba(255,255,255,0.7); max-width: 600px; margin-bottom: 0px;">
+            <a class="button" href="{{ site.github.url }}{{site.baseurl}}/pages/art.html">I draw</a>, 
+            <a class="button" href="{{ site.github.url }}{{site.baseurl}}/pages/design.html">I design</a>, and
+            <a class="button" href="https://github.com/paragbhtngr">I develop</a>. 
+        </p>
+        <p style="font-size: 1.5rem; color: rgba(255,255,255,0.7); max-width: 600px; margin-top: 0px;">
+            Feel free to check out my stuff ...well ...here.
         </p>
     </div>
     
@@ -33,5 +38,22 @@ title: Home
     .container a {
         color: white;
         text-decoration: underline;
+    }
+
+    .button {
+        text-decoration: none !important;
+        position: relative;
+    }
+    .button:hover::after {
+        content: '';
+        background: rgba(111, 0, 255, 0.911);
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        padding: 5px 10px;
+        position: absolute;
+        top: -5px;
+        left: -10px;
+        border-radius: 500px;
     }
 </style>

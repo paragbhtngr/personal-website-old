@@ -1,0 +1,104 @@
+ <!--DEMO01-->
+<div id="employeeaeModal" class="gallery">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-employeeaeModal closeModal"> 
+        <span id="close-1"></span>
+        <span id="close-2"></span>
+    </div>
+    
+    <div class="modal-content">
+        <!--Your modal content goes here-->
+        <div class="modal-content-inner" id="employeeae-slick">
+            <div class="full-art" >
+                <div class="gloss"><img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/3B-1.jpg"></div>
+            </div>
+            <div class="full-art" >
+                <div class="gloss"><img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/3B-2b.jpg"></div>
+            </div>
+            <div class="full-art" >
+                <div class="gloss"><img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/3B-3.jpg"></div>
+            </div>
+            <div class="full-art" >
+                <div class="gloss"><img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/3B-4.jpg"></div>
+            </div>
+            <div class="full-art" >
+                <div class="gloss"><img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/3B-4b.jpg"></div>
+            </div>
+            <div class="full-art" >
+                <div class="gloss"><img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/3B-5.jpg"></div>
+            </div>
+            <div class="full-art" >
+                <div class="gloss"><img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/3B-6.jpg"></div>
+            </div>
+            <div class="full-art" >
+                <div class="gloss"><img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/3B-7.jpg"></div>
+            </div>
+            <div class="full-art" >
+                <div class="gloss"><img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/3B-8.jpg"></div>
+            </div>
+            <div class="full-art" >
+                <div class="gloss"><img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/3B-9.jpg"></div>
+            </div>
+            <div class="full-art" >
+                <div class="gloss"><img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/3B-10.jpg"></div>
+            </div>
+            <div class="full-art" >
+                <div class="gloss"><img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/3B-11.jpg"></div>
+            </div>
+            <div class="full-art" >
+                <div class="gloss"><img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/3B-12.jpg"></div>
+            </div>
+            <div class="full-art" >
+                <div class="gloss"><img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/3B-13.jpg"></div>
+            </div>
+            <div class="full-art" >
+                <div class="gloss"><img class="lazyload" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/portfolio/3B-14.jpg"></div>
+            </div>
+        </div>
+        <div class="full-art spacer"></div>
+        <div class="info">            
+            <div class="frosty-text">
+                <h2>Illustrations for Employee A & E</h2>
+                <h6>Mixed Media (2018)</h6>
+                <p>
+                    I had the opportunity to do some illustrations for the book "Employee A&E: Manager's Edition",
+                    a book that provides fresh perspectives on how managers can create a positive workplace 
+                    environment for their employees based on psychological and sociological principles. The
+                    book helps managers identify and resolve the issues of bullying, bellitlement and burnout
+                    at the workplace, creating an environment where everyone feels respected, safe, trusted, 
+                    united and valued.
+                </p>
+                <p>
+                    The illustrations help visualize metaphors and psychological concepts explained in the book,
+                    and were done in pencil, before inking and then some shading done digitally. This project 
+                    was really fun to work on because I had the freedom to explore how to visualize some pretty
+                    complex psycological processes, and I learned a lot about mental states and health in the
+                    process.
+                </p>
+                <p>
+                    If you haven't read it, I highly recommend giving it a go - if you're a manager it will definitely
+                    help you understand how to manage employee's emotional states and create a positive workplace
+                    enviroment. If you're not, it's still a very insghtful look into how we function as people. 
+                    Check out the book <a href="https://www.undelusional.com/products/employee-ae">here</a>!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#employeeae").animatedModal({
+        modalTarget:'employeeaeModal',
+        animatedIn:'bounceInUp',
+        animatedOut:'bounceOutDown',
+        color: '#FFFFFF'
+    });
+
+    $('#employeeae-slick').slick({
+        lazyLoad: 'ondemand',
+        fade: true,
+        // dots: true,
+        nextArrow: '<button class="prev"><i class="fas fa-lg fa-chevron-left"></i></button>',
+        prevArrow: '<button class="next"><i class="fas fa-lg fa-chevron-right"></i></button>',
+    });
+</script>
