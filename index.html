@@ -4,17 +4,27 @@ title: Home
 ---
 
 <div id="hi">  
-    <div class="animated bounceInUp" style="text-align: center; padding: 30px; padding-bottom: 50px;">
-        <h1 style="font-size: 8rem; color: #fff">Hi!</h1>
-        <h2 style="font-size: 2rem; color: rgba(255,255,255,0.7)">
+    <div class="animated bounceInUp" id="hi-container">
+        <h1 id="hey">Hi!</h1>
+        <h2 id="name">
             I'm Parag
         </h2>
-        <p style="font-size: 1.5rem; color: rgba(255,255,255,0.7); max-width: 600px; margin-bottom: 0px;">
-            <a class="button" href="{{ site.github.url }}{{site.baseurl}}/pages/art.html">I draw</a>, 
-            <a class="button" href="{{ site.github.url }}{{site.baseurl}}/pages/design.html">I design</a>, and
-            <a class="button" href="https://github.com/paragbhtngr">I develop</a>. 
-        </p>
-        <p style="font-size: 1.5rem; color: rgba(255,255,255,0.7); max-width: 600px; margin-top: 0px;">
+        <!-- <div class="home-shape"></div> -->
+        <div class="home-skills">
+            <div class="skill">
+                <img src="{{ site.github.url }}{{site.baseurl}}/assets/img/Artboard 1.png" alt="">
+                <a class="button" href="{{ site.github.url }}{{site.baseurl}}/pages/art.html">I draw</a>
+            </div>
+            <div class="skill">
+                <img src="{{ site.github.url }}{{site.baseurl}}/assets/img/Artboard 2.png" alt="">
+                <a class="button" href="{{ site.github.url }}{{site.baseurl}}/pages/design.html">I design</a>
+            </div>
+            <div class="skill">
+                <img src="{{ site.github.url }}{{site.baseurl}}/assets/img/Artboard 4.png" alt="">
+                <a class="button" href="https://github.com/paragbhtngr">I develop</a>
+            </div>
+        </div>
+        <p id="check-me-out">
             Feel free to check out my stuff ...well ...here.
         </p>
     </div>
@@ -32,7 +42,7 @@ title: Home
         left: 0;
         height: 100vh;
         align-items: flex-end;
-        background: linear-gradient(to top, rgb(51, 51, 153), rgba(111, 0, 255, 0.911));
+        background: linear-gradient(to top, rgb(15, 15, 49), rgba(41, 16, 74, 0.911));
     }
 
     .container a {
@@ -47,13 +57,14 @@ title: Home
     .button:hover::after {
         content: '';
         background: rgba(111, 0, 255, 0.911);
-        height: 100%;
-        width: 100%;
+        height: 150%;
+        width: calc(100% - 60px);
+        box-sizing: border-box;
         z-index: -1;
-        padding: 5px 10px;
+        padding: 10px 5px;
         position: absolute;
         top: -5px;
-        left: -10px;
+        left: 30px;
         border-radius: 500px;
     }
 </style>

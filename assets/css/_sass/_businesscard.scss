@@ -146,6 +146,20 @@
         .bc-logo {
             padding: 10px 10px;
             max-width: 80%;
+            letter-spacing: 6px;
+            &:before {
+                height: 70px;
+                margin-top: -35px;
+                width: 80%;
+                margin-left: -40%;
+            }
+            &:after {
+                content: '';
+                height: 66px;
+                margin-top: -33px;
+                width: calc(80% - 4px);
+                margin-left: calc(-40% + 2px);
+            }
         }
         .bc-title {
             padding: 10px;

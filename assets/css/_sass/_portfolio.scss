@@ -177,7 +177,7 @@
         padding: 40px;
         width: calc(50% - 80px);
         border-radius: 0px;
-        min-width: 300px;
+        // min-width: 300px;
         a {
             // color: #7941E1;
             color: #620fca;
@@ -395,6 +395,10 @@
                 font-size: 0.8rem;
             }
         }
+    }
+
+    .closeModal {
+        margin-right: 10px;
     }
 
     .closeModal-white {
